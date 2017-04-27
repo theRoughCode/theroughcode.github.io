@@ -33,7 +33,7 @@ section {
 }
 
 .section-1 {
-    height: calc(100vh - 55px);
+    height: 93vh;
 }
 
 @media screen and (max-width: 768px) {
