@@ -1,9 +1,42 @@
 html, body{
   font-size:16px;
   color: #dfdfdf;
-  background-color: #063647;
+  background-color: #094256;
+  overflow-y: auto;
 }
 
 a {
   color: #00d1b2;
+}
+
+.nav {
+  background-color: #022a38;
+  color: white;
+}
+
+a.nav-item {
+	color: #dfdfdf;
+}
+
+a.nav-item:hover {
+	color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+	.nav-menu {
+		background-color: #063647;
+	}
+
+	.nav-toggle:hover {
+		background-color: transparent;
+	}
+
+	.nav-toggle span {
+		background-color: #dfdfdf;
+	}
+
+	.nav-toggle span:hover {
+		background-color: #fff;
+	}
+
 }

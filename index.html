@@ -2,8 +2,10 @@
 <html>
   <head>
     <title>Raphael Koh</title>
-    <!-- css files -->
+    <!-- for icons -->
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- for extra css -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <!-- meta info -->
     <meta charset="utf-8" />
@@ -11,6 +13,43 @@
   	<meta name="author" content="Raphael Koh">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <h1><a href="http://raphaelkoh.me/Course-Notes">Course Notes</a></h1>
   <body>
+    <!-- Navbar -->
+		<nav class="nav container void-background">
+			<div class="nav-left">
+				<a href="https://www.facebook.com/raphkoh" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-facebook"></i>
+					</span>
+				</a>
+				<a href="https://github.com/theRoughCode" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-github"></i>
+					</span>
+				</a>
+				<a href="https://www.linkedin.com/in/raphael-koh/" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-linkedin"></i>
+					</span>
+				</a>
+			</div>
+
+			<!-- This "nav-menu" is hidden on mobile -->
+			<!-- Add the modifier "is-active" to display it on mobile -->
+			<div class="nav-right nav-menu">
+				<a class="nav-item" href="#about">About</a>
+				<a class="nav-item" href="#projects">Projects</a>
+				<a class="nav-item" href="#social">Social</a>
+			</div>
+
+			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+			<span class="nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
+		</nav>
+    <h1><a href="http://raphaelkoh.me/Course-Notes">Course Notes</a></h1>
+  </body>
 </html>
