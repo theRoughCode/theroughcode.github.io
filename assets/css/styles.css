@@ -1,5 +1,5 @@
 html, body{
-  font-size:16px;
+  font-size:1em;
   color: #dfdfdf;
   background-color: #094256;
   overflow-y: auto;
@@ -27,13 +27,34 @@ section {
 	padding-bottom: 3rem;
   border: 2px solid orange;
 }
-
 .section {
   background-color: inherit;
 }
-
 .section-1 {
     height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-title {
+  justify-content: center;
+  padding-bottom: 0.2em;
+}
+.about-title h1 {
+  color: #0992c4;
+  font-size: 7em;
+  font-family: "Roboto", sans-serif;
+}
+.about-desc {
+  align-items: center;
+  display: flex;
+  margin: auto;
+  width: 80%;
+}
+.intro {
+	text-align: justify;
+	margin: auto 0;
 }
 
 @media screen and (max-width: 768px) {
