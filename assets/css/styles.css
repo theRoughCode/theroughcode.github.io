@@ -22,6 +22,20 @@ a.nav-item:hover {
 	color: #fff;
 }
 
+section {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+  border: 2px solid orange;
+}
+
+.section {
+  background-color: inherit;
+}
+
+.section-1 {
+    height: calc(100vh - 55px);
+}
+
 @media screen and (max-width: 768px) {
 	.nav-menu {
 		background-color: #063647;
