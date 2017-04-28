@@ -44,8 +44,7 @@
 			<!-- This "nav-menu" is hidden on mobile -->
 			<!-- Add the modifier "is-active" to display it on mobile -->
 			<div class="nav-right nav-menu">
-				<a class="nav-item is-tab" href="#">Home</a>
-				<a class="nav-item is-tab" href="#about">About</a>
+				<a class="nav-item is-tab" href="#">About</a>
         <a class="nav-item is-tab" href="#projects">Projects</a>
 				<a class="nav-item" target="_blank" href="./assets/resources/resume.pdf">Resume</a>
 			</div>
@@ -62,9 +61,9 @@
     <section class="section section-1">
       <div class="container">
         <div class="container about-title has-text-centered">
-          <h1>Raphael Koh</h1>
+          <h1 class="title is-1" id="about-title">Raphael Koh</h1>
         </div>
-        <div class="container about-desc">
+        <div class="columns about-desc">
           <div class="column is-one-third">
             <img src="assets/img/avatar.png">
           </div>
@@ -76,12 +75,24 @@
         </div>
       </div>
     </section>
-    <section id="about" class="section section-2">
-
-    </section>
-    <section id="projects" class="section section-3">
-      <div class="container is-fluid">
-        <h1><a href="http://raphaelkoh.me/Course-Notes">Course Notes</a></h1>
+    <section id="projects" class="section section-2">
+      <div class="columns projects">
+        <div class="column is-one-quarter">
+          <aside class="menu">
+            <p class="menu-label">
+              Projects
+            </p>
+            <ul class="menu-list">
+              <li><a>Project 1</a></li>
+              <li><a>Project 2</a></li>
+            </ul>
+          </aside>
+        </div>
+        <div class="column">
+          <div class="container is-fluid">
+            <h1><a href="http://raphaelkoh.me/Course-Notes">Course Notes</a></h1>
+          </div>
+        </div>
       </div>
     </section>
   </body>
