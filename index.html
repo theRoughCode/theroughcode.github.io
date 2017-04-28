@@ -61,13 +61,13 @@
 
     <section class="section section-1 v-middle">
       <div class="container">
+        <div class="column">
+          <img class="avatar" src="assets/img/avatar.png">
+        </div>
         <div class="container about-title has-text-centered">
           <h1 class="title is-1" id="about-title">Raphael Koh</h1>
         </div>
         <div class="columns about-desc v-middle">
-          <div class="column is-one-third">
-            <img src="assets/img/avatar.png">
-          </div>
           <div class="column">
             <p class="intro">
     					tique. Ut eleifend eros nulla id vestibulum suspendisse, ornare id massa laudantium, a urna a, urna commodo velit condimentum, porta egestas semper. Vestibulum viverra velit. Curabitur erat os nulla id vestibulum suspendisse, ornare id massa laudantium, a urna a
@@ -76,130 +76,141 @@
         </div>
       </div>
     </section>
-    <section id="projects" class="section section-2">
+    <section class="section section-2">
       <h1 class="title" id="project-title">Projects</h1>
-      <div class="container is-fluid">
-        <div class="tile is-ancestor is-vertical">
-          <div class="tile is-parent">
-            <!-- Maybot -->
-            <div class="tile is-child is-4">
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-parent">
+          <h1 class="title is-2">Apps</h1>
+          <div class="columns project-apps">
+            <div class="column">
               <div class="card">
-                <header class="card-header">
-                  <p class="card-header-title">Maybot</p>
-                  <a class="card-header-icon">
-                    <span class="icon">
-                      <i class="fa fa-angle-down"></i>
-                    </span>
-                  </a>
-                </header>
-                <div class="c-content slide-up">
-                  <div class="card-content">
-                    <div class="content">
-                      Kik chat bot that matches hackers at hackathons based on roles and skills.
-                    </div>
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <img src="./assets/img/maybot-banner.png" alt="maybot">
+                    <a href="https://bots.kik.com/#/maybot">
+                      <div class="overlay"></div>
+                    </a>
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media-content">
+                    <p class="title is-4">Maybot</p>
+                  </div>
+                  <div class="content">
+                    Kik chat bot that matches hackers at hackathons based on roles and skills.<br  />
+                    <a>#KikChatBot</a>
+                    <a>#Python</a>
+                    <a>#MongoDB</a>
                   </div>
                 </div>
                 <footer class="card-footer">
-                  <a class="card-footer-item" href="https://bots.kik.com/#/maybot">Go To</a>
+                  <a class="card-footer-item" href="https://bots.kik.com/#/maybot">Bot Shop</a>
                   <a class="card-footer-item" href="https://github.com/theRoughCode/maybot">Github</a>
                 </footer>
               </div>
             </div>
-            <!-- PicFive -->
-            <div class="tile is-child is-8">
+            <div class="column">
               <div class="card">
-                <header class="card-header">
-                  <p class="card-header-title">PicFive</p>
-                  <a class="card-header-icon">
-                    <span class="icon">
-                      <i class="fa fa-angle-down"></i>
-                    </span>
-                  </a>
-                </header>
-                <div class="c-content slide-up">
-                  <div class="card-content">
-                    <div class="content">
-                      Web app game involving users taking pictures that include as many of the key words to obtain a higher score.
-                      <a>#MachineLearning</a> <a>#ComputerVision</a> <a>#ClarifaiAPI</a>
-                    </div>
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <img src="./assets/img/picfive-banner.png" alt="picfive">
+                    <a href="https://picfive.herokuapp.com/">
+                      <div class="overlay"></div>
+                    </a>
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media-content">
+                    <p class="title is-4">PicFive</p>
+                  </div>
+                  <div class="content">
+                    Web app game involving users taking pictures that include as many of the key words as possible to get the highest score.<br  />
+                    <a>#MachineLearning</a>
+                    <a>#ComputerVision</a>
+                    <a>#ClarifaiAPI</a>
                   </div>
                 </div>
                 <footer class="card-footer">
-                  <a class="card-footer-item" href="https://picfive.herokuapp.com/">Go To</a>
+                  <a class="card-footer-item" href="https://picfive.herokuapp.com/">Website</a>
                   <a class="card-footer-item" href="https://github.com/theRoughCode/PicFive">Github</a>
                 </footer>
               </div>
             </div>
-          </div>
-          <div class="tile is-parent">
-            <!-- Course Notes -->
-            <div class="tile is-child is-3">
+            <div class="column">
               <div class="card">
-                <header class="card-header">
-                  <p class="card-header-title">Course Notes</p>
-                  <a class="card-header-icon">
-                    <span class="icon">
-                      <i class="fa fa-angle-down"></i>
-                    </span>
-                  </a>
-                </header>
-                <div class="c-content slide-up">
-                  <div class="card-content">
-                    <div class="content">
-                      Open-source course notes created for UW Students.
-                    </div>
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <img src="./assets/img/watsmymajor-banner.png" alt="WatsMyMajor">
+                    <a href="http://watsmymajor.herokuapp.com/">
+                      <div class="overlay"></div>
+                    </a>
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media-content">
+                    <p class="title is-4">WatsMyMajor</p>
+                  </div>
+                  <div class="content">
+                    Assists UW students in choosing their major/minor using data from <a>#uw-api</a>.<br  />
+                    <a>#Node.js</a>
+                    <a>#Express.js</a>
+                    <a>#Handlebars.js</a>
                   </div>
                 </div>
                 <footer class="card-footer">
-                  <a class="card-footer-item" href="http://raphaelkoh.me/Course-Notes">Go To</a>
+                  <a class="card-footer-item" href="http://watsmymajor.herokuapp.com/">Website</a>
+                  <a class="card-footer-item" href="https://github.com/theRoughCode/WatsMyMajor">Github</a>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <h1 class="title is-2">Education</h1>
+          <div class="columns project-apps">
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-16by9">
+                    <img src="./assets/img/course-notes-banner.png" alt="Course Notes">
+                    <a href="http://raphaelkoh.me/Course-Notes/">
+                      <div class="overlay"></div>
+                    </a>
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media-content">
+                    <p class="title is-4">UW Course Notes</p>
+                  </div>
+                  <div class="content">
+                    Open-source course notes created for UW Students.<br  />
+                    <a>#MathJax</a>
+                  </div>
+                </div>
+                <footer class="card-footer">
+                  <a class="card-footer-item" href="http://raphaelkoh.me/Course-Notes">Website</a>
                   <a class="card-footer-item" href="https://github.com/theRoughCode/Course-Notes">Github</a>
                 </footer>
               </div>
             </div>
-            <!-- Road to Node -->
-            <div class="tile is-child is-4">
+            <div class="column">
               <div class="card">
-                <header class="card-header">
-                  <p class="card-header-title">Road to Node</p>
-                  <a class="card-header-icon">
-                    <span class="icon">
-                      <i class="fa fa-angle-down"></i>
-                    </span>
-                  </a>
-                </header>
-                <div class="c-content slide-up">
-                  <div class="card-content">
-                    <div class="content">
-                      Trilogy of workshops I hosted aimed at teaching the basics of <a>#Node.js</a>
-                    </div>
+                <div class="card-image">
+                  <figure class="image is-2by1">
+                    <img src="./assets/img/road-to-node-banner.png" alt="Road to Node">
+                    <a href="https://github.com/theRoughCode/Road-to-Node">
+                      <div class="overlay"></div>
+                    </a>
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media-content">
+                    <p class="title is-4">Road to Node</p>
+                  </div>
+                  <div class="content">
+                    Trilogy of workshops I hosted aimed at teaching the basics of <a>#Node.js</a> and <a>#Express.js</a>.
                   </div>
                 </div>
                 <footer class="card-footer">
-                  <a class="card-footer-item" href="https://github.com/theRoughCode/maybot">Github</a>
-                </footer>
-              </div>
-            </div>
-            <!-- WatsMyMajor -->
-            <div class="tile is-child is-5">
-              <div class="card">
-                <header class="card-header">
-                  <p class="card-header-title">WatsMyMajor</p>
-                  <a class="card-header-icon">
-                    <span class="icon">
-                      <i class="fa fa-angle-down"></i>
-                    </span>
-                  </a>
-                </header>
-                <div class="c-content slide-up">
-                  <div class="card-content">
-                    <div class="content">
-                      Website that assists UW students in choosing their major/minor using data from <a>#uw-api</a>.
-                    </div>
-                  </div>
-                </div>
-                <footer class="card-footer">
-                  <a class="card-footer-item" href="http://watsmymajor.herokuapp.com/">Go To</a>
-                  <a class="card-footer-item" href="https://github.com/theRoughCode/WatsMyMajor">Github</a>
+                  <a class="card-footer-item" href="https://github.com/theRoughCode/Road-to-Node">Github</a>
                 </footer>
               </div>
             </div>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Raphael Koh</title>
+    <!-- for icons -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- for extra css -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <!-- meta info -->
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+  	<meta name="author" content="Raphael Koh">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      .projects-menu {
+        background-color: #00374c;
+        box-shadow: 6px 3px 5px black;
+        border-radius: 10px;
+        border-style: ridge;
+        border: 1px solid black;
+      }
+      .menu {
+        padding: 15px;
+        padding-right: 5px;
+      }
+      .menu-label {
+        color: #899dbc;
+      }
+      .menu-list a {
+        color: #01a089;
+      }
+      .menu-list a:hover {
+        background-color: #002c3d;
+      }
+
+      .is-child {
+        padding: 20px 10px;
+      }
+      .card {
+        border: 0.3px solid black;
+        box-shadow: 6px 5px 7px black;
+        -webkit-user-select: none; /* Chrome/Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+ */
+      }
+      .card-header {
+        border-bottom: 0.3px solid black;
+        background-color: #1a5770;
+        cursor: pointer;
+      }
+      .card-header:hover {
+        background-color: #275d72;
+      }
+      .card-header-title {
+        color: #d4f0fc;
+      }
+      .card-content {
+        background-color: #2499cc;
+      }
+      .card-content .content a {
+        color: #c9ecfc;
+      }
+      .card-content .content a:hover {
+        color: #00d1b2;
+      }
+      .card-footer, .card-footer-item {
+        background-color: #1a5770;
+      }
+      .card-footer {
+        border-top: 0.3px solid black;
+      }
+      .card-footer-item:hover {
+        background-color: #275d72;
+      }
+      .card-footer-item a:hover {
+        color:
+      }
+
+      .slide-up, .slide-down {
+        max-height: 0;
+        overflow: hidden;
+        -webkit-transition: max-height 0.5s ease-in-out;
+        -moz-transition: max-height 0.5s ease-in-out;
+        -o-transition: max-height 0.5s ease-in-out;
+        transition: max-height 0.5s ease-in-out;
+      }
+
+      .slide-down {
+        height: auto;
+        max-height: 10em;
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Navbar -->
+		<nav class="nav container void-background has-shadow">
+			<div class="nav-left">
+				<a href="https://www.facebook.com/raphkoh" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-facebook"></i>
+					</span>
+				</a>
+				<a href="https://github.com/theRoughCode" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-github"></i>
+					</span>
+				</a>
+				<a href="https://www.linkedin.com/in/raphael-koh/" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-linkedin"></i>
+					</span>
+				</a>
+        <a href="mailto:rcykoh@edu.uwaterloo.ca" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-envelope"></i>
+					</span>
+				</a>
+			</div>
+
+			<!-- This "nav-menu" is hidden on mobile -->
+			<!-- Add the modifier "is-active" to display it on mobile -->
+			<div class="nav-right nav-menu">
+				<a class="nav-item is-tab" href="#">About</a>
+        <a class="nav-item is-tab" href="#projects">Projects</a>
+        <a class="nav-item is-tab" href="#work">Work</a>
+				<a class="nav-item" target="_blank" href="./assets/resources/resume.pdf">Resume</a>
+			</div>
+
+			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+			<span class="nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
+		</nav>
+
+    <section class="section section-1 v-middle">
+      <div class="container about">
+        <div class="column">
+          <img class="avatar" src="assets/img/avatar.png">
+        </div>
+        <div class="container about-title has-text-centered">
+          <h1 class="title is-1" id="about-title">Raphael Koh</h1>
+        </div>
+        <div class="columns about-desc v-middle">
+          <div class="column">
+            <p class="intro">
+    					tique. Ut eleifend eros nulla id vestibulum suspendisse, ornare id massa laudantium, a urna a, urna commodo velit condimentum, porta egestas semper. Vestibulum viverra velit. Curabitur erat os nulla id vestibulum suspendisse, ornare id massa laudantium, a urna a
+    				</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="section section-2">
+      <h1 class="title" id="project-title">Projects</h1>
+      <div class="container is-fluid">
+        <div class="tile is-ancestor is-vertical">
+          <div class="tile is-parent">
+            <!-- Maybot -->
+            <div class="tile is-child is-4">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">Maybot</p>
+                  <a class="card-header-icon">
+                    <span class="icon">
+                      <i class="fa fa-angle-down"></i>
+                    </span>
+                  </a>
+                </header>
+                <div class="c-content slide-down">
+                  <div class="card-content">
+                    <div class="content">
+                      Kik chat bot that matches hackers at hackathons based on roles and skills.
+                    </div>
+                  </div>
+                </div>
+                <footer class="card-footer">
+                  <a class="card-footer-item" href="https://bots.kik.com/#/maybot">Go To</a>
+                  <a class="card-footer-item" href="https://github.com/theRoughCode/maybot">Github</a>
+                </footer>
+              </div>
+            </div>
+            <!-- PicFive -->
+            <div class="tile is-child is-8">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">PicFive</p>
+                  <a class="card-header-icon">
+                    <span class="icon">
+                      <i class="fa fa-angle-down"></i>
+                    </span>
+                  </a>
+                </header>
+                <div class="c-content slide-down">
+                  <div class="card-content">
+                    <div class="content">
+                      Web app game involving users taking pictures that include as many of the key words to obtain a higher score.
+                      <a>#MachineLearning</a> <a>#ComputerVision</a> <a>#ClarifaiAPI</a>
+                    </div>
+                  </div>
+                </div>
+                <footer class="card-footer">
+                  <a class="card-footer-item" href="https://picfive.herokuapp.com/">Go To</a>
+                  <a class="card-footer-item" href="https://github.com/theRoughCode/PicFive">Github</a>
+                </footer>
+              </div>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <!-- Course Notes -->
+            <div class="tile is-child is-3">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">Course Notes</p>
+                  <a class="card-header-icon">
+                    <span class="icon">
+                      <i class="fa fa-angle-down"></i>
+                    </span>
+                  </a>
+                </header>
+                <div class="c-content slide-down">
+                  <div class="card-content">
+                    <div class="content">
+                      Open-source course notes created for UW Students.
+                    </div>
+                  </div>
+                </div>
+                <footer class="card-footer">
+                  <a class="card-footer-item" href="http://raphaelkoh.me/Course-Notes">Go To</a>
+                  <a class="card-footer-item" href="https://github.com/theRoughCode/Course-Notes">Github</a>
+                </footer>
+              </div>
+            </div>
+            <!-- Road to Node -->
+            <div class="tile is-child is-4">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">Road to Node</p>
+                  <a class="card-header-icon">
+                    <span class="icon">
+                      <i class="fa fa-angle-down"></i>
+                    </span>
+                  </a>
+                </header>
+                <div class="c-content slide-down">
+                  <div class="card-content">
+                    <div class="content">
+                      Trilogy of workshops I hosted aimed at teaching the basics of <a>#Node.js</a>
+                    </div>
+                  </div>
+                </div>
+                <footer class="card-footer">
+                  <a class="card-footer-item" href="https://github.com/theRoughCode/Road-to-Node">Github</a>
+                </footer>
+              </div>
+            </div>
+            <!-- WatsMyMajor -->
+            <div class="tile is-child is-5">
+              <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">WatsMyMajor</p>
+                  <a class="card-header-icon">
+                    <span class="icon">
+                      <i class="fa fa-angle-down"></i>
+                    </span>
+                  </a>
+                </header>
+                <div class="c-content slide-down">
+                  <div class="card-content">
+                    <div class="content">
+                      Website that assists UW students in choosing their major/minor using data from <a>#uw-api</a>.
+                    </div>
+                  </div>
+                </div>
+                <footer class="card-footer">
+                  <a class="card-footer-item" href="http://watsmymajor.herokuapp.com/">Go To</a>
+                  <a class="card-footer-item" href="https://github.com/theRoughCode/WatsMyMajor">Github</a>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="work" class="section section-3">
+    </section>
+
+    <!-- Scripts  -->
+		<script src="controller.js"></script>
+  </body>
+</html>
