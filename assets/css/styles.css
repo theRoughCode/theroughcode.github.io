@@ -33,9 +33,16 @@ section {
 }
 .section-1 {
     height: 93vh;
-    display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+.v-middle {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  color: #0992c4;
 }
 
 .about-title {
@@ -43,12 +50,9 @@ section {
   padding-bottom: 0.5em;
 }
 #about-title{
-  color: #0992c4;
   font-size: 7em;
 }
 .about-desc {
-  align-items: center;
-  display: flex;
   margin: auto;
   width: 80%;
 }
@@ -61,8 +65,32 @@ section {
   height: 92vw;
   border: 1px solid red;
 }
+#project-title {
+  font-size: 4em;
+  padding-left: 0.1em;
+}
+.projects-menu {
+  background-color: #00374c;
+  box-shadow: 6px 3px 5px black;
+  border-radius: 10px;
+  border-style: ridge;
+  border: 1px solid black;
+}
+.menu {
+  padding: 15px;
+}
 .menu-label, .menu-list a {
   color: white;
+}
+.menu-list a:hover {
+  background-color: #002c3d;
+}
+
+.is-child {
+  padding: 10px;
+}
+.card {
+  box-shadow: 6px 5px 20px black;
 }
 
 @media screen and (max-width: 768px) {
