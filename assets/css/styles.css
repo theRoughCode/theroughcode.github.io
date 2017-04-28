@@ -6,6 +6,9 @@ html, body{
 }
 
 a {
+  color: #01a089;
+}
+a:hover {
   color: #00d1b2;
 }
 
@@ -25,15 +28,16 @@ a.nav-item:hover {
 section {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
-  border: 2px solid orange;
 }
 .section {
   background-color: inherit;
-  height: 100vh;
 }
 .section-1 {
     height: 93vh;
     justify-content: center;
+}
+.section-3 {
+  height: 100vh;
 }
 
 .v-middle {
@@ -87,10 +91,56 @@ section {
 }
 
 .is-child {
-  padding: 10px;
+  padding: 20px 10px;
 }
 .card {
   box-shadow: 6px 5px 20px black;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+}
+.card-header {
+  background-color: #1a5770;
+  cursor: pointer;
+}
+.card-header:hover {
+  background-color: #275d72;
+}
+.card-header-title {
+  color: #d4f0fc;
+}
+.card-content {
+  background-color: #2499cc;
+}
+.card-content .content a {
+  color: #a7d2e5;
+}
+.card-content .content a:hover {
+  color: #d2eaf4;
+}
+.card-footer, .card-footer-item {
+  border: 1px solid #0b5270;
+  background-color: #1a5770;
+}
+.card-footer-item:hover {
+  background-color: #275d72;
+}
+.card-footer-item a:hover {
+  color:
+}
+
+.slide-up, .slide-down {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  -moz-transition: max-height 0.5s ease-in-out;
+  -o-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.slide-down {
+  height: auto;
+  max-height: 10em;
 }
 
 @media screen and (max-width: 768px) {
