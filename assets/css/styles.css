@@ -72,9 +72,11 @@ section {
 .projects {
   min-height: inherit;
 }
-#project-title {
-  font-size: 4em;
+#project-title, #projects-title {
   padding-left: 0.1em;
+}
+#projects-title {
+  font-size: 4em;
 }
 
 .project-apps {
