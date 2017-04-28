@@ -15,6 +15,7 @@ a:hover {
 .nav {
   background-color: #022a38;
   color: white;
+  max-width: none;
 }
 
 a.nav-item {
