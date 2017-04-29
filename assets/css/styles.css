@@ -45,7 +45,10 @@ section {
 }
 
 .title {
-  color: #0992c4;
+  color: white;
+}
+.subtitle {
+  color: white;
 }
 
 .avatar {
@@ -72,7 +75,7 @@ section {
 .projects {
   min-height: inherit;
 }
-#projects-title {
+.section-title {
   font-size: 4em;
   padding-left: 0.1em;
 }
@@ -115,6 +118,34 @@ section {
 }
 .content {
   color: white;
+}
+
+.work-elem {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.work-logo {
+  margin: 10px auto;
+}
+#saf-logo {
+  width: 70%;
+}
+.work-content {
+  text-align: justify;
+}
+
+#top {
+  display: flex;
+  justify-content: center;
+}
+#top a {
+  box-shadow: 3px 5px 2px black;
+  transition: all 0.2s linear;
+}
+#top a:hover{
+  background-color: #d2d8e0;
+  box-shadow: none;
 }
 
 @media screen and (max-width: 768px) {
