@@ -129,8 +129,9 @@ section {
 .work-logo {
   margin: 10px auto;
 }
-#saf-logo {
-  width: 70%;
+#long-logo {
+  width: 60%;
+  min-width: 160px;
 }
 .work-content {
   text-align: justify;
