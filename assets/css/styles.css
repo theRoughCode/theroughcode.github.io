@@ -1,6 +1,6 @@
 html, body{
   font-size:1em;
-  color: #dfdfdf;
+  color: #e8fffd;
   background-color: #094256;
   overflow-y: auto;
 }
@@ -79,6 +79,7 @@ section {
 }
 #about-title{
   font-size: calc(100px - .5vw);
+  color: #00c49d;
 }
 .about-desc {
   margin: auto;
@@ -91,7 +92,7 @@ section {
   word-spacing: 5.5px;
 }
 .highlight {
-  color: #6090d1;
+  color: #07afa5;
 }
 
 .projects {
@@ -100,9 +101,13 @@ section {
 .section-title {
   font-size: 4em;
   padding-left: 0.1em;
+  color: #01bc95;
+  font-weight: 400;
 }
 .project-title {
   padding-left: 0.3em;
+  color: #009677;
+  font-weight: 400;
 }
 
 .project-apps {
