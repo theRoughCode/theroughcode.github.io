@@ -24,6 +24,9 @@ a:hover {
   background-color: #022a38;
   color: white;
 }
+.nav-left {
+  padding-left: 7px;
+}
 .nav-menu a {
   transition: all 0.6s ease;
 }
@@ -164,11 +167,12 @@ section {
   text-align: justify;
 }
 
-#top {
+#top, #resume-button {
   display: flex;
   justify-content: center;
 }
 #top a {
+  margin-top: 55px;
   box-shadow: 3px 5px 2px black;
   transition: all 0.2s linear;
 }
