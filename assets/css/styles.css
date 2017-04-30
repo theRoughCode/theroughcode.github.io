@@ -53,6 +53,7 @@ section {
 .section-1 {
     min-height: 93vh;
     justify-content: center;
+    background-image: url("./assets/img/bg.jpg");
 }
 
 .v-middle {
@@ -78,7 +79,7 @@ section {
   padding-bottom: 0.5em;
 }
 #about-title{
-  font-size: calc(100px - .5vw);
+  font-size: calc(100px - 6vw);
   color: #00c49d;
 }
 .about-desc {
@@ -89,7 +90,6 @@ section {
 .intro {
 	text-align: justify;
 	margin: auto 0;
-  word-spacing: 5.5px;
 }
 .highlight {
   color: #07afa5;

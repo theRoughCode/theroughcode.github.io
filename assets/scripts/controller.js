@@ -35,7 +35,6 @@ const navItems = navMenu.querySelectorAll('.nav-item');
 
 function fixNav () {
   const section1 = document.querySelector('.section-1');
-  console.log(nav.offsetHeight);
   if(window.scrollY > 0) {
     section1.style.paddingTop = `${nav.offsetHeight}px`;
     nav.classList.add('fixed-nav');
