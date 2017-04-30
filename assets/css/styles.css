@@ -69,6 +69,7 @@ section {
 
 .avatar {
   width: 30vw;
+  max-width: 250px;
   display: flex;
   margin: auto;
 }
@@ -77,15 +78,20 @@ section {
   padding-bottom: 0.5em;
 }
 #about-title{
-  font-size: 10vw;
+  font-size: calc(100px - .5vw);
 }
 .about-desc {
   margin: auto;
   width: 80vw;
+  max-width: 700px;
 }
 .intro {
 	text-align: justify;
 	margin: auto 0;
+  word-spacing: 5.5px;
+}
+.highlight {
+  color: #6090d1;
 }
 
 .projects {
