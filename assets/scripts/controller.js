@@ -39,8 +39,8 @@ const navItems = navMenu.querySelectorAll('.nav-item');
 function fixNav () {
   if(window.scrollY > 0) {
     sections[0].style.paddingTop = `${nav.offsetHeight}px`;
-    for (var i = 0; i < sections.length - 1; i++) {
-      sections[i].style.marginBottom = `${nav.offsetHeight / (sections.length - 1)}px`;
+    for (var i = 1; i < sections.length - 1; i++) {
+      sections[i].style.marginBottom = `${nav.offsetHeight / (sections.length - 2)}px`;
     }
     nav.classList.add('fixed-nav');
   } else {
@@ -52,16 +52,19 @@ function fixNav () {
 
 function checkFontSize() {
   const maxFontSize = 130;
+  const defFontSize = 14;
   const title = document.querySelector('#about-title');
+  var titles = document.querySelectorAll('.section-title')
+
   var fontSize = parseFloat(window.getComputedStyle(title, null).getPropertyValue('font-size'));
   if (fontSize > maxFontSize) title.style.fontSize = `${maxFontSize}px`;
-  else title.style.fontSize = `14vw`;
+  else title.style.fontSize = `${defFontSize}vw`;
+
 }
 
 function checkSection(){
   var index = 0;
   for (var i = sections.length - 1; i > 0; i--) {
-    console.log(window.scrollY , sections[i].offsetTop - nav.offsetHeight);
     if (window.scrollY >= sections[i].offsetTop - nav.offsetHeight - 5) {
       lastPos = window.scrollY;
       index = i;
