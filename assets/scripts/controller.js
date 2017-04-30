@@ -16,7 +16,10 @@ window.onload = () => {
 
   fixNav();
   checkSection();
+  checkFontSize();
 }
+
+window.onresize = checkFontSize;
 
 cardHeader.forEach((elem, index) => elem.addEventListener('click', e => {
   const cardContent = cardContents[index];
@@ -42,6 +45,14 @@ function fixNav () {
     section1.style.paddingTop = 0;
     nav.classList.remove('fixed-nav');
   }
+}
+
+function checkFontSize() {
+  const maxFontSize = 130;
+  const title = document.querySelector('#about-title');
+  var fontSize = parseFloat(window.getComputedStyle(title, null).getPropertyValue('font-size'));
+  if (fontSize > maxFontSize) title.style.fontSize = `${maxFontSize}px`;
+  else title.style.fontSize = `14vw`;
 }
 
 function checkSection(){

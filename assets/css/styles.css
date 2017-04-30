@@ -79,7 +79,7 @@ section {
   padding-bottom: 0.5em;
 }
 #about-title{
-  font-size: calc(100px - 6vw);
+  font-size: 14vw;
   color: #00c49d;
 }
 .about-desc {
