@@ -12,10 +12,26 @@ a:hover {
   color: #00d1b2;
 }
 
+#nav {
+  width: 100%;
+  margin: auto;
+}
+#nav .nav {
+  width: 100%;
+  margin: auto;
+}
 .nav {
   background-color: #022a38;
   color: white;
-  max-width: none;
+}
+.nav-menu a {
+  transition: all 0.6s ease;
+}
+.fixed-nav {
+  position: fixed;
+  box-shadow: 0 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: inherit;
 }
 
 a.nav-item {
@@ -148,6 +164,7 @@ section {
 #top a:hover{
   background-color: #d2d8e0;
   box-shadow: none;
+  -webkit-transform: translate(0, 4px);
 }
 
 @media screen and (max-width: 768px) {

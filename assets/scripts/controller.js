@@ -1,8 +1,3 @@
-// IMPORT JQUERY
-const script = document.createElement('script');
-script.src = '//code.jquery.com/jquery-latest.min.js';
-document.getElementsByTagName('head')[0].appendChild(script);
-
 const cardHeader = document.querySelectorAll('.card-header')
 const cardContents = document.querySelectorAll('.c-content');
 const cardHeaderIcons = document.querySelectorAll('.card-header-icon');
