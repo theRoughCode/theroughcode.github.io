@@ -37,12 +37,15 @@ const navMenu = document.querySelector('.nav-menu');
 const navItems = navMenu.querySelectorAll('.nav-item');
 
 function fixNav () {
-  const section1 = document.querySelector('.section-1');
   if(window.scrollY > 0) {
-    section1.style.paddingTop = `${nav.offsetHeight}px`;
+    sections[0].style.paddingTop = `${nav.offsetHeight}px`;
+    for (var i = 0; i < sections.length - 1; i++) {
+      sections[i].style.marginBottom = `${nav.offsetHeight / (sections.length - 1)}px`;
+    }
     nav.classList.add('fixed-nav');
   } else {
-    section1.style.paddingTop = 0;
+    sections[0].style.paddingTop = 0;
+    sections[0].style.marginBottom = 0;
     nav.classList.remove('fixed-nav');
   }
 }
@@ -58,7 +61,9 @@ function checkFontSize() {
 function checkSection(){
   var index = 0;
   for (var i = sections.length - 1; i > 0; i--) {
-    if (window.scrollY >= sections[i].offsetTop) {
+    console.log(window.scrollY , sections[i].offsetTop - nav.offsetHeight);
+    if (window.scrollY >= sections[i].offsetTop - nav.offsetHeight - 5) {
+      lastPos = window.scrollY;
       index = i;
       break;
     }
