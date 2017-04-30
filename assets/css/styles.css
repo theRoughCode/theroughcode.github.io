@@ -50,7 +50,6 @@ section {
   min-height: 100vh;
   background-color: inherit;
   overflow-y: hidden;
-  border: 1px solid yellow;
 }
 .section-1 {
     min-height: 93vh;
@@ -75,7 +74,6 @@ section {
   max-width: 250px;
   display: flex;
   margin: auto;
-  border: 1px solid red;
 }
 .about-title {
   justify-content: center;
