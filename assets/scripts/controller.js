@@ -39,13 +39,13 @@ const navItems = navMenu.querySelectorAll('.nav-item');
 // fix navbar
 function fixNav () {
   if(window.scrollY > 0) {
-    sections[0].style.paddingTop = `${nav.offsetHeight}px`;
+    sections[0].style.marginTop = `${nav.offsetHeight}px`;
     for (var i = 1; i < sections.length - 1; i++) {
       sections[i].style.marginBottom = `${nav.offsetHeight / (sections.length - 2)}px`;
     }
     nav.classList.add('fixed-nav');
   } else {
-    sections[0].style.paddingTop = 0;
+    sections[0].style.marginTop = 0;
     sections[0].style.marginBottom = 0;
     nav.classList.remove('fixed-nav');
   }
