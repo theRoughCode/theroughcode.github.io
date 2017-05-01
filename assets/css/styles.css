@@ -78,8 +78,6 @@ section {
   color: white;
 }
 
-#about-container {
-}
 .avatar {
   width: 30vw;
   max-width: 250px;
@@ -92,7 +90,9 @@ section {
 }
 #about-title{
   font-size: 14vw;
-  color: #00c49d;
+  color: #4494e5;
+  margin-bottom: 10px;
+  text-shadow: 6px 4px 7px black;
 }
 .about-desc {
   margin: auto;
