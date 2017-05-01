@@ -27,6 +27,9 @@ a:hover {
 .nav-left {
   padding-left: 7px;
 }
+.nav-right {
+  padding-right: 15px;
+}
 .nav-menu a {
   transition: all 0.6s ease;
 }
@@ -75,6 +78,8 @@ section {
   color: white;
 }
 
+#about-container {
+}
 .avatar {
   width: 30vw;
   max-width: 250px;
@@ -92,6 +97,7 @@ section {
 .about-desc {
   margin: auto;
   width: 80vw;
+  background:rgba(0,0,0,0.6);
   max-width: 700px;
 }
 .intro {
@@ -99,7 +105,7 @@ section {
 	margin: auto 0;
 }
 .highlight {
-  color: #07afa5;
+  color: #04d3c7;
 }
 
 .projects {
@@ -121,6 +127,8 @@ section {
 }
 
 .overlay {
+  opacity: 0;
+  background-color: white;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -128,9 +136,7 @@ section {
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
   transition: .5s ease;
-  background-color: white;
 }
 .card {
   border: 1px solid black;
