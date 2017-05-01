@@ -112,9 +112,11 @@ section {
   min-height: inherit;
 }
 .section-title {
-  padding-left: 0.1em;
   color: #01bc95;
   font-weight: 400;
+}
+.section-2 .section-title {
+  padding-left: 0.1em;
 }
 .project-title {
   padding-left: 0.3em;
