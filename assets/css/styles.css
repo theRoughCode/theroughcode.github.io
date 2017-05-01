@@ -57,7 +57,10 @@ section {
 .section-1 {
     min-height: 93vh;
     justify-content: center;
-    background-image: url("assets/img/bg.jpg");
+    background-image: url("../img/bg2.jpg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 .v-middle {

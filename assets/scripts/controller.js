@@ -36,6 +36,7 @@ const sections = document.querySelectorAll('section');
 const navMenu = document.querySelector('.nav-menu');
 const navItems = navMenu.querySelectorAll('.nav-item');
 
+// fix navbar
 function fixNav () {
   if(window.scrollY > 0) {
     sections[0].style.paddingTop = `${nav.offsetHeight}px`;
@@ -50,16 +51,15 @@ function fixNav () {
   }
 }
 
+// set max font size for title
 function checkFontSize() {
   const maxFontSize = 130;
   const defFontSize = 14;
   const title = document.querySelector('#about-title');
   var titles = document.querySelectorAll('.section-title')
-
+  title.style.fontSize = `${defFontSize}vw`;
   var fontSize = parseFloat(window.getComputedStyle(title, null).getPropertyValue('font-size'));
-  if (fontSize > maxFontSize) title.style.fontSize = `${maxFontSize}px`;
-  else title.style.fontSize = `${defFontSize}vw`;
-
+  if (fontSize >= maxFontSize) title.style.fontSize = `${maxFontSize}px`;
 }
 
 function checkSection(){
