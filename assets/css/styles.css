@@ -109,7 +109,8 @@ section {
 	margin: auto 0;
 }
 .highlight {
-  color: #04d3c7;
+  color: #5985b7;
+  font-weight: bold;
 }
 
 .projects {
@@ -183,6 +184,9 @@ section {
 }
 .work-content {
   text-align: justify;
+}
+.work-content p {
+  line-height: 150%;
 }
 
 #top, #resume-button {
