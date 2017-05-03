@@ -6,10 +6,10 @@ html, body{
 }
 
 a {
-  color: #01a089;
+  color: #11c1a8;
 }
 a:hover {
-  color: #00d1b2;
+  color: #02eac8;
 }
 
 #nav {
@@ -116,7 +116,7 @@ section {
   min-height: inherit;
 }
 .section-title {
-  color: #01bc95;
+  color: #04d8ac;
   font-weight: 400;
 }
 .section-2 .section-title {
@@ -124,7 +124,7 @@ section {
 }
 .project-title {
   padding-left: 0.3em;
-  color: #009677;
+  color: #20bc9c;
   font-weight: 400;
 }
 
