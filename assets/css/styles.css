@@ -166,6 +166,9 @@ section {
 .card-content, .card-footer {
   background-color: inherit;
 }
+.card-content a {
+  cursor: default;
+}
 .content {
   color: white;
 }
