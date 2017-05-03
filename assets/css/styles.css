@@ -158,6 +158,9 @@ section {
 .card-image:hover .overlay {
   opacity: 0.7;
 }
+.media-content p {
+  color: #20bc9c;
+}
 
 .card-content, .card-footer {
   background-color: inherit;
