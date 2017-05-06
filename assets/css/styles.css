@@ -166,8 +166,12 @@ section {
 .card-content, .card-footer {
   background-color: inherit;
 }
-.card-content a {
-  cursor: default;
+.card-content .content a {
+  cursor: text;
+  color: #68a096;
+}
+.card-content .content a:hover {
+  color: #68a096;
 }
 .content {
   color: white;
