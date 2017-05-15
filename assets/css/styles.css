@@ -103,6 +103,7 @@ section {
   background:rgba(0,0,0,0.6);
   max-width: 700px;
   color: white;
+  border-radius: 8px;
 }
 .intro {
 	text-align: justify;
