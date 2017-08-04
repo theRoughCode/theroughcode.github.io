@@ -62,13 +62,9 @@ a.nav-item:hover {
     background-size: cover;
 }
 
-
-
-section {
+.section {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
-}
-.section {
   min-height: 100vh;
   background-color: inherit;
   overflow-y: hidden;
