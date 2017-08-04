@@ -240,4 +240,7 @@ section {
 		background-color: #fff;
 	}
 
+  .parallax {
+    background-attachment: scroll;
+  }
 }
