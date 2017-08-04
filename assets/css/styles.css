@@ -48,6 +48,22 @@ a.nav-item:hover {
 	color: #fff;
 }
 
+.parallax {
+    /* The image used */
+    background-image: url("../img/bg.jpg");
+
+    /* Set a specific height */
+    min-height: 50vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
 section {
 	padding-top: 3rem;
 	padding-bottom: 3rem;
@@ -57,15 +73,10 @@ section {
   background-color: inherit;
   overflow-y: hidden;
 }
-.section-1 {
-    min-height: 93vh;
+#about {
     justify-content: center;
-    background-image: url("../img/bg.jpg");
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
 }
-.section-2 {
+#projects {
   background-color: #0b3b66;
 }
 
@@ -121,7 +132,7 @@ section {
   color: #04d8ac;
   font-weight: 400;
 }
-.section-2 .section-title {
+#projects .section-title {
   padding-left: 0.1em;
 }
 .project-title {
