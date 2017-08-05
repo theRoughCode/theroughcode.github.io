@@ -2,17 +2,7 @@
 <html>
   <head>
     <title>Raphael Koh</title>
-    <!-- JQuery for scrolling -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.js"></script>
-    <script type="text/javascript" src="./assets/scripts/jquery.scrollTo.min.js"></script>
-    <script type="text/javascript" src="./assets/scripts/jquery.localScroll.min.js"></script>
-  	<script type="text/javascript" src="./assets/scripts/bootstrap.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        const nav = document.querySelector('#nav');
-        $.localScroll({duration:800, offset: -nav.offsetHeight});
-      });
-    </script>
+
     <!-- for icons -->
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <!-- for extra css -->
@@ -28,6 +18,7 @@
   </head>
   <body>
     <div class="container is-fluid" id="nav">
+
       <!-- Navbar -->
   		<nav class="nav container void-background has-shadow is-fluid">
   			<div class="nav-left">
@@ -376,6 +367,19 @@
     </section>
 
     <!-- Scripts  -->
+    <script type="text/javascript" src="./assets/scripts/jquery-3.2.1.min.js"></script>
 		<script src="./assets/scripts/controller.js"></script>
+    <script type="text/javascript">
+      $('div.nav-menu').find('a').click(function(){
+        var $href = $(this).attr('href');
+        var $anchor = $($href).offset();
+        $('body').animate({ scrollTop: $anchor.top - 30 });
+        return false;
+      });
+      $('div#top').find('a').click(function() {
+        $('body').animate({ scrollTop: 0 });
+        return false;
+      });
+    </script>
   </body>
 </html>

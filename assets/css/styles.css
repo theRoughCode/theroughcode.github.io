@@ -21,6 +21,7 @@ a:hover {
   margin: auto;
 }
 .nav {
+  height: 70px;
   background-color: #022a38;
   color: white;
 }
@@ -35,7 +36,9 @@ a:hover {
 }
 .fixed-nav {
   position: fixed;
-  box-shadow: 0 6px rgba(0, 0, 0, 0.1);
+  height: 50px;
+  box-shadow: 0 6px rgba(10, 0, 0, 0.4);
+  transition: all 0.6s ease;
   z-index: 1;
   width: inherit;
 }
