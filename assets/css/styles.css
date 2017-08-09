@@ -16,15 +16,24 @@ a:hover {
   width: 100%;
   margin: auto;
 }
+
 #nav .nav {
-  width: 100%;
-  margin: auto;
-}
-.nav {
-  height: 70px;
+  height: 80px;
   background-color: #022a38;
   color: white;
+  width: 100%;
+  margin: auto;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s;
 }
+
+#nav .nav.shrink {
+  height: 50px;
+}
+
 .nav-left {
   padding-left: 7px;
 }
@@ -36,9 +45,6 @@ a:hover {
 }
 .fixed-nav {
   position: fixed;
-  height: 50px;
-  box-shadow: 0 6px rgba(10, 0, 0, 0.4);
-  transition: all 0.6s ease;
   z-index: 1;
   width: inherit;
 }
@@ -52,17 +58,17 @@ a.nav-item:hover {
 }
 
 .parallax {
-    /* The image used */
-    background-image: url("../img/bg.jpg");
+  /* The image used */
+  background-image: url("../img/bg.jpg");
 
-    /* Set a specific height */
-    min-height: 50vh;
+  /* Set a specific height */
+  min-height: 50vh;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section {

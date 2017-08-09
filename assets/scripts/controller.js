@@ -31,6 +31,7 @@ cardHeader.forEach((elem, index) => elem.addEventListener('click', e => {
 }));
 
 const nav = document.querySelector('#nav');
+const navbar = nav.querySelector('.nav');
 const navTop = nav.offsetTop;
 const sections = document.querySelectorAll('section');
 const navMenu = document.querySelector('.nav-menu');
@@ -38,16 +39,19 @@ const navItems = navMenu.querySelectorAll('.nav-item');
 
 // fix navbar
 function fixNav () {
+  const height = nav.offsetHeight;
   if(window.scrollY > 0) {
-    sections[0].style.marginTop = `${nav.offsetHeight}px`;
+    sections[0].style.marginTop = `${height}px`;
     for (var i = 1; i < sections.length - 1; i++) {
-      sections[i].style.marginBottom = `${nav.offsetHeight / (sections.length - 2)}px`;
+      sections[i].style.marginBottom = `${height / (sections.length - 2)}px`;
     }
     nav.classList.add('fixed-nav');
+    navbar.classList.add('shrink');
   } else {
     sections[0].style.marginTop = 0;
     sections[0].style.marginBottom = 0;
     nav.classList.remove('fixed-nav');
+    navbar.classList.remove('shrink');
   }
 }
 

@@ -16,7 +16,7 @@
   	<meta name="author" content="Raphael Koh">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
+  <body id="body">
     <div class="container is-fluid" id="nav">
 
       <!-- Navbar -->
@@ -47,10 +47,11 @@
   			<!-- This "nav-menu" is hidden on mobile -->
   			<!-- Add the modifier "is-active" to display it on mobile -->
   			<div class="nav-right nav-menu">
-  				<a class="nav-item is-tab" href="#about">About</a>
+  				<a class="nav-item is-tab" href="#body">About</a>
           <a class="nav-item is-tab" href="#projects">Projects</a>
           <a class="nav-item is-tab" href="#cv">CV</a>
-  				<a class="nav-item" target="_blank" href="./assets/resources/resume.pdf">Resume</a>
+          <a class="nav-item" target="_blank" href="./assets/resources/resume.pdf">Resume</a>
+  				<a class="nav-item" target="_blank" href="http://raphaelkoh.me/Course-Notes">Course Notes</a>
   			</div>
 
   			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
@@ -173,7 +174,7 @@
               <div class="card">
                 <div class="card-image">
                   <figure class="image is-16by9">
-                    <img src="./assets/img/course-notes-banner.jpg" alt="Course Notes">
+                    <img src="./assets/img/course-notes-banner.PNG" alt="Course Notes">
                     <a href="http://raphaelkoh.me/Course-Notes/" target="_blank">
                       <div class="overlay"></div>
                     </a>
@@ -373,9 +374,12 @@
       $('div.nav-menu').find('a').click(function(){
         var $href = $(this).attr('href');
         var $anchor = $($href).offset();
-        $('body').animate({ scrollTop: $anchor.top - 30 });
+        var $offset = $('nav.nav').height();
+        var $pos = $anchor.top + ($anchor.top === 0) * 30;
+        $('body').animate({ scrollTop: $anchor.top });
         return false;
       });
+
       $('div#top').find('a').click(function() {
         $('body').animate({ scrollTop: 0 });
         return false;
