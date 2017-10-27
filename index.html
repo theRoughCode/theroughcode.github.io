@@ -50,8 +50,7 @@
   				<a class="nav-item is-tab" href="#body">About</a>
           <a class="nav-item is-tab" href="#projects">Projects</a>
           <a class="nav-item is-tab" href="#cv">CV</a>
-          <a class="nav-item" target="_blank" href="./assets/resources/resume.pdf">Resume</a>
-  				<a class="nav-item" target="_blank" href="http://raphaelkoh.me/Course-Notes">Course Notes</a>
+  				<a class="nav-item" target="_blank" href="./assets/resources/resume.pdf">Resume</a>
   			</div>
 
   			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
@@ -174,7 +173,7 @@
               <div class="card">
                 <div class="card-image">
                   <figure class="image is-16by9">
-                    <img src="./assets/img/course-notes-banner.PNG" alt="Course Notes">
+                    <img src="./assets/img/course-notes-banner.jpg" alt="Course Notes">
                     <a href="http://raphaelkoh.me/Course-Notes/" target="_blank">
                       <div class="overlay"></div>
                     </a>
@@ -376,12 +375,12 @@
         var $anchor = $($href).offset();
         var $offset = $('nav.nav').height();
         var $pos = $anchor.top + ($anchor.top === 0) * 30;
-        $('body').animate({ scrollTop: $anchor.top });
+        $('html, body').animate({ scrollTop: $anchor.top });
         return false;
       });
 
       $('div#top').find('a').click(function() {
-        $('body').animate({ scrollTop: 0 });
+        $('html, body').animate({ scrollTop: 0 });
         return false;
       });
     </script>

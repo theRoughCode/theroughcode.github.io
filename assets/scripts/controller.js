@@ -1,8 +1,3 @@
-const cardHeader = document.querySelectorAll('.card-header')
-const cardContents = document.querySelectorAll('.c-content');
-const cardHeaderIcons = document.querySelectorAll('.card-header-icon');
-const cardIcons = Array.from(cardHeaderIcons).map(elem => elem.querySelector('i'));
-
 window.onload = () => {
   const navMenu = document.querySelector('.nav-menu');
   const navItems = document.querySelectorAll('.nav-item');
@@ -19,16 +14,7 @@ window.onload = () => {
   checkFontSize();
 }
 
-window.onresize = checkFontSize;
-
-cardHeader.forEach((elem, index) => elem.addEventListener('click', e => {
-  const cardContent = cardContents[index];
-  const cardIcon = cardIcons[index];
-  cardContent.classList.toggle('slide-down');
-  cardContent.classList.toggle('slide-up');
-  cardIcon.classList.toggle('fa-angle-down');
-  cardIcon.classList.toggle('fa-angle-up');
-}));
+window.onresize = checkFontSize
 
 const nav = document.querySelector('#nav');
 const navbar = nav.querySelector('.nav');
