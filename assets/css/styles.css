@@ -15,23 +15,33 @@ a:hover {
 #nav {
   width: 100%;
   margin: auto;
+  position: fixed;
+  top: 0;
+  z-index: 99;
 }
 
 #nav .nav {
   height: 80px;
   background-color: #022a38;
+  opacity: 0.56;
   color: white;
   width: 100%;
   margin: auto;
-  -webkit-transition: height 0.3s;
-  -moz-transition: height 0.3s;
-  -ms-transition: height 0.3s;
-  -o-transition: height 0.3s;
-  transition: height 0.3s;
+  -webkit-transition: height  0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  -o-transition: height 0.5s;
+  transition: height 0.5s;
+  transition: height opacity .5s ease-out;
+  -ms-transition: height opacity .5s ease-out;
+  -moz-transition: height opacity .5s ease-out;
+  -webkit-transition: height opacity .5s ease-out;
+  -o-transition: height opacity .5s ease-out;
 }
 
 #nav .nav.shrink {
   height: 50px;
+  opacity: 1;
 }
 
 .nav-left {
@@ -42,11 +52,6 @@ a:hover {
 }
 .nav-menu a {
   transition: all 0.6s ease;
-}
-.fixed-nav {
-  position: fixed;
-  z-index: 1;
-  width: inherit;
 }
 
 a.nav-item {
@@ -59,7 +64,7 @@ a.nav-item:hover {
 
 .parallax {
   /* The image used */
-  background-image: url("../img/bg.jpg");
+  background-image: url("../img/bg_trans.jpg");
 
   /* Set a specific height */
   min-height: 50vh;
@@ -72,22 +77,14 @@ a.nav-item:hover {
 }
 
 .section {
-	padding-top: 3rem;
+	padding-top: 100px;
 	padding-bottom: 3rem;
   min-height: 100vh;
   background-color: inherit;
   overflow-y: hidden;
 }
-#about {
-    justify-content: center;
-}
 #projects {
   background-color: #0b3b66;
-}
-
-.v-middle {
-  display: flex;
-  align-items: center;
 }
 
 .title {
@@ -103,27 +100,28 @@ a.nav-item:hover {
   display: flex;
   margin: auto;
 }
+
+#about {
+  margin-top: 100px;
+  float: left;
+  margin-left: 40px;
+}
 .about-title {
-  justify-content: center;
   padding-bottom: 0.5em;
 }
-#about-title{
-  font-size: 14vw;
-  color: #4494e5;
-  margin-bottom: 10px;
-  text-shadow: 6px 4px 7px black;
+.about-title h1 {
+  margin-bottom: 40px;
+  font-size: 70px;
+  float: left;
 }
 .about-desc {
-  margin: auto;
   width: 80vw;
-  background:rgba(0,0,0,0.6);
   max-width: 700px;
-  color: white;
-  border-radius: 8px;
 }
-.intro {
-	text-align: justify;
-	margin: auto 0;
+.about-desc p {
+  text-align: justify;
+  color: black;
+  font-size: 17px;
 }
 .highlight {
   color: #5985b7;
@@ -248,4 +246,76 @@ a.nav-item:hover {
   .parallax {
     background-attachment: scroll;
   }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: none;
+  }
+
+  .about-title h1 {
+    font-size: 70px;
+    float: none;
+  }
+
+  .about-desc {
+    font-size: 14px;
+    margin: auto;
+  }
+}
+
+
+/* Bouncing Arrow */
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left:-20px;
+}
+
+.bounce {
+	-webkit-animation-name: bounce;
+	-moz-animation-name: bounce;
+	-o-animation-name: bounce;
+	animation-name: bounce;
+}
+.animated{-webkit-animation-fill-mode:both;
+-moz-animation-fill-mode:both;
+-ms-animation-fill-mode:both;
+-o-animation-fill-mode:both;
+
+            animation-iteration-count: infinite;
+       -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+
+animation-fill-mode:both;
+-webkit-animation-duration:2s;
+-moz-animation-duration:2s;
+-ms-animation-duration:2s;
+-o-animation-duration:2s;
+animation-duration:2s;
+}
+
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
 }
