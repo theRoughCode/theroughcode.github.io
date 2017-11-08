@@ -10,6 +10,22 @@ window.onload = () => {
   Array.from(navItems).forEach(e => e.addEventListener('click', toggleNav));
 
   fixNav();
+  
+  setTimeout(() => onFinishLoad(), 2600);
+}
+
+// Finish loading
+function onFinishLoad() {
+  const hiddenSections = document.querySelectorAll('.hidden');
+  const invisibleSection = document.querySelectorAll('.invisible');
+  document.querySelector('.phone-loader').classList.add('hidden');
+  hiddenSections.forEach((item) => {
+    item.classList.remove('hidden');
+  });
+  
+  invisibleSection.forEach((item) => {
+    item.classList.remove('invisible');
+  });
   checkSection();
 }
 
