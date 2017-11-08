@@ -40,7 +40,7 @@ a:hover {
 
 #nav .nav.shrink {
   height: 50px;
-  opacity: 1;
+  background-color: rgba(2, 42, 56, 1);
 }
 
 .nav-left {
@@ -228,8 +228,12 @@ a.nav-item:hover {
 
 @media screen and (max-width: 768px) {
 	.nav-menu {
-		background-color: rgba(2, 42, 56, 0.9);;
+		background-color: rgba(2, 42, 56, 0.9);
 	}
+  
+  #nav .nav.shrink .nav-menu {
+    background-color: rgba(2, 42, 56, 1);
+  }
 
   .nav-toggle {
     margin: auto;
