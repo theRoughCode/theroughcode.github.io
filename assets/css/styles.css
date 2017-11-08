@@ -22,8 +22,7 @@ a:hover {
 
 #nav .nav {
   height: 80px;
-  background-color: #022a38;
-  opacity: 0.56;
+  background-color: rgba(2, 42, 56, 0.56);
   color: white;
   width: 100%;
   margin: auto;
@@ -229,9 +228,13 @@ a.nav-item:hover {
 
 @media screen and (max-width: 768px) {
 	.nav-menu {
-		background-color: #063647;
+		background-color: rgba(2, 42, 56, 0.9);;
 	}
 
+  .nav-toggle {
+    margin: auto;
+  }
+  
 	.nav-toggle:hover {
 		background-color: transparent;
 	}
@@ -253,12 +256,15 @@ a.nav-item:hover {
     flex-direction: column;
     justify-content: center;
     float: none;
+    margin-top: 20px;
     margin-left: auto;
+    margin-bottom: 40px;
   }
 
   .about-title h1 {
     font-size: 70px;
     float: none;
+    padding-bottom: 0;
   }
 
   .about-desc {
