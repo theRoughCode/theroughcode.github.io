@@ -82,6 +82,7 @@ a.nav-item:hover {
   min-height: 100vh;
   background-color: inherit;
   overflow-y: hidden;
+  position: relative;
 }
 #projects {
   background-color: #0b3b66;
@@ -252,6 +253,7 @@ a.nav-item:hover {
     flex-direction: column;
     justify-content: center;
     float: none;
+    margin-left: auto;
   }
 
   .about-title h1 {
