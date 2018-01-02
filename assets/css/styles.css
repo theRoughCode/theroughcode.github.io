@@ -156,6 +156,9 @@ a.nav-item:hover {
 
 .project-apps {
   margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
 }
 
 .overlay {
@@ -173,7 +176,7 @@ a.nav-item:hover {
 .card {
   border: 1px solid black;
   box-shadow: 6px 5px 2px black;
-  max-width: 480px;
+  width: 480px;
   background-color: #002230;
   margin: auto;
   margin-bottom: 30px;
@@ -240,7 +243,7 @@ a.nav-item:hover {
 	.nav-menu {
 		background-color: rgba(2, 42, 56, 0.9);
 	}
-  
+
   #nav .nav.shrink .nav-menu {
     background-color: rgba(2, 42, 56, 1);
   }
@@ -248,7 +251,7 @@ a.nav-item:hover {
   .nav-toggle {
     margin: auto;
   }
-  
+
 	.nav-toggle:hover {
 		background-color: transparent;
 	}
@@ -348,17 +351,17 @@ animation-duration:2s;
   position: absolute;
   top: 50%;
   left: 50%;
-  
+
   width: 200px;
   height: 200px;
-  
+
   margin-top: -100px;
   margin-left: -100px;
-  
+
   text-align: center;
-  
+
   transition: all 0.3s linear;
-  
+
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -374,7 +377,7 @@ animation-duration:2s;
 
   width: 160px;
   height: 100px;
-  
+
   margin-top: -50px;
   margin-left: -80px;
 
@@ -389,33 +392,33 @@ animation-duration:2s;
 
 .dot:nth-child(2) {
   z-index: 11;
-  
+
   width: 150px;
   height: 90px;
-  
+
   margin-top: -45px;
   margin-left: -75px;
-  
+
   border-radius: 3px;
-  
+
   background-color: #3c617d;
-  
+
   animation-name: dot2;
 }
 
 .dot:nth-child(3) {
   z-index: 12;
-  
+
   width: 40px;
   height: 20px;
-  
+
   margin-top: 50px;
   margin-left: -20px;
-  
+
   border-radius: 0 0 5px 5px;
-  
+
   background-color: #6bb2cd;
-  
+
   animation-name: dot3;
 }
 
@@ -481,7 +484,7 @@ animation-duration:2s;
 
     margin-top: 49px;
     margin-left: -5px;
-    
+
     border-radius: 8px;
   }
   63%, 69% {
@@ -490,7 +493,7 @@ animation-duration:2s;
 
     margin-top: -37px;
     margin-left: -8px;
-    
+
     border-radius: 10px;
   }
 }
