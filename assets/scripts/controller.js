@@ -11,7 +11,7 @@ window.onload = () => {
 
   fixNav();
 
-  setTimeout(() => onFinishLoad(), 2600);
+  onFinishLoad();
 }
 
 // Finish loading
