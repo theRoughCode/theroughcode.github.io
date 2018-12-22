@@ -62,26 +62,8 @@ a.nav-item:hover {
 	color: #fff;
 }
 
-.invisible {
-  opacity: 0;
-}
-
 .hidden {
   display: none;
-}
-
-.parallax {
-  /* The image used */
-  background-image: url("../img/bg_trans.jpg");
-
-  /* Set a specific height */
-  min-height: 50vh;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .section {
@@ -92,9 +74,6 @@ a.nav-item:hover {
   overflow-y: hidden;
   position: relative;
   transition: all 0.5s ease-in-out;
-}
-#projects {
-  background-color: #0b3b66;
 }
 
 .title {
@@ -112,33 +91,29 @@ a.nav-item:hover {
 }
 
 #about {
-  margin-top: 100px;
-  float: left;
-  margin-left: 40px;
+  display: flex;
+}
+#about .container {
+  margin: auto;
 }
 .about-title {
+  padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
-.about-title h1 {
-  margin-bottom: 40px;
-  font-size: 70px;
-  float: left;
-}
-.about-desc {
-  width: 80vw;
-  max-width: 700px;
+.about-subtitle {
+  font-size: 19px;
 }
 .about-desc p {
   text-align: justify;
   color: black;
-  font-size: 17px;
 }
 .highlight {
-  color: #5985b7;
+  color: #20bc9c;
   font-weight: bold;
 }
 
-.projects {
+#projects {
+  background-color: #0b3b66;
   min-height: inherit;
 }
 .section-title {
@@ -223,6 +198,17 @@ a.nav-item:hover {
 .work-content p {
   line-height: 150%;
 }
+.location {
+  font-size: 15px;
+}
+
+table {
+  background-color: #edf5ff !important;
+}
+tbody tr:hover td, tbody tr:hover th {
+  background-color: #04d8ac !important;
+  color: white;
+}
 
 #top, #resume-button {
   display: flex;
@@ -240,6 +226,10 @@ a.nav-item:hover {
 }
 
 @media screen and (max-width: 768px) {
+  #body {
+    font-size: 0.75em;
+  }
+
 	.nav-menu {
 		background-color: rgba(2, 42, 56, 0.9);
 	}
@@ -264,10 +254,6 @@ a.nav-item:hover {
 		background-color: #fff;
 	}
 
-  .parallax {
-    background-attachment: scroll;
-  }
-
   #about {
     display: flex;
     flex-direction: column;
@@ -278,15 +264,25 @@ a.nav-item:hover {
     margin-bottom: 40px;
   }
 
+  .avatar {
+    width: 50vw;
+    max-width: 250px;
+    display: flex;
+    margin: auto;
+  }
+
   .about-title h1 {
     font-size: 70px;
     float: none;
     padding-bottom: 0;
   }
 
-  .about-desc {
+  .about-subtitle {
     font-size: 14px;
-    margin: auto;
+  }
+
+  .card {
+    width: 80vw;
   }
 }
 
@@ -343,157 +339,4 @@ animation-duration:2s;
 	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
 	40% {transform: translateY(-30px);}
 	60% {transform: translateY(-15px);}
-}
-
-/* Loader */
-/* The loader container */
-.phone-loader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  width: 200px;
-  height: 200px;
-
-  margin-top: -100px;
-  margin-left: -100px;
-
-  text-align: center;
-
-  transition: all 0.3s linear;
-
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-
-/* The dot */
-.dot {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 10;
-
-  width: 160px;
-  height: 100px;
-
-  margin-top: -50px;
-  margin-left: -80px;
-
-  border-radius: 5px;
-
-  background-color: #1e3f57;
-
-  transform-type: preserve-3d;
-
-  animation: dot1 3s cubic-bezier(.55,.3,.24,.99) infinite;
-}
-
-.dot:nth-child(2) {
-  z-index: 11;
-
-  width: 150px;
-  height: 90px;
-
-  margin-top: -45px;
-  margin-left: -75px;
-
-  border-radius: 3px;
-
-  background-color: #3c617d;
-
-  animation-name: dot2;
-}
-
-.dot:nth-child(3) {
-  z-index: 12;
-
-  width: 40px;
-  height: 20px;
-
-  margin-top: 50px;
-  margin-left: -20px;
-
-  border-radius: 0 0 5px 5px;
-
-  background-color: #6bb2cd;
-
-  animation-name: dot3;
-}
-
-@keyframes dot1 {
-  3%, 97% {
-    width: 160px;
-    height: 100px;
-
-    margin-top: -50px;
-    margin-left: -80px;
-  }
-  30%, 36% {
-    width: 80px;
-    height: 120px;
-
-    margin-top: -60px;
-    margin-left: -40px;
-  }
-  63%, 69% {
-    width: 40px;
-    height: 80px;
-
-    margin-top: -40px;
-    margin-left: -20px;
-  }
-}
-
-@keyframes dot2 {
-  3%, 97% {
-    width: 150px;
-    height: 90px;
-
-    margin-top: -45px;
-    margin-left: -75px;
-  }
-  30%, 36% {
-    width: 70px;
-    height: 96px;
-
-    margin-top: -48px;
-    margin-left: -35px;
-  }
-  63%, 69% {
-    width: 32px;
-    height: 60px;
-
-    margin-top: -30px;
-    margin-left: -16px;
-  }
-}
-
-@keyframes dot3 {
-  3%, 97% {
-    width: 40px;
-    height: 20px;
-
-    margin-top: 50px;
-    margin-left: -20px;
-  }
-  30%, 36% {
-    width: 8px;
-    height: 8px;
-
-    margin-top: 49px;
-    margin-left: -5px;
-
-    border-radius: 8px;
-  }
-  63%, 69% {
-    width: 16px;
-    height: 4px;
-
-    margin-top: -37px;
-    margin-left: -8px;
-
-    border-radius: 10px;
-  }
 }

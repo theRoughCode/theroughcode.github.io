@@ -18,7 +18,6 @@ window.onload = () => {
 function onFinishLoad() {
   const hiddenSections = document.querySelectorAll('.hidden');
   const invisibleSection = document.querySelectorAll('.invisible');
-  document.querySelector('.phone-loader').classList.add('hidden');
   hiddenSections.forEach((item) => {
     item.classList.remove('hidden');
   });
@@ -35,8 +34,7 @@ function fixNav() {
   const navbar = nav.querySelector('.nav');
   const arrow = document.querySelector('.arrow')
 
-  const height = window.innerHeight;
-  if(window.scrollY > height) {
+  if(window.scrollY > 0) {
     navbar.classList.add('shrink');
   } else {
     navbar.classList.remove('shrink');
