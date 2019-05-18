@@ -107,13 +107,17 @@ a.nav-item:hover {
   text-align: justify;
   color: black;
 }
+#interests {
+  text-align: left;
+  font-size: 0.95em;
+}
 .highlight {
   color: #20bc9c;
   font-weight: bold;
 }
 
 #projects {
-  background-color: #0b3b66;
+  background-color: #ddedff;
   min-height: inherit;
 }
 .section-title {
