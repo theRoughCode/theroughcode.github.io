@@ -1,7 +1,7 @@
 {
 "companyName": "TheRoughCode",
 "productName": "AstroJump",
-"productVersion": "1.0.2",
+"productVersion": "1.0.3",
 "dataUrl": "webgl.data.unityweb",
 "wasmCodeUrl": "webgl.wasm.code.unityweb",
 "wasmFrameworkUrl": "webgl.wasm.framework.unityweb",
