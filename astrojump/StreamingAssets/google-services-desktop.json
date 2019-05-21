@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "622063040205",
+    "firebase_url": "https://astrojumpgame.firebaseio.com",
+    "project_id": "astrojumpgame",
+    "storage_bucket": "astrojumpgame.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622063040205:android:9461f904425e3b64",
+        "android_client_info": {
+          "package_name": "com.TheRoughCode.AstroJump"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622063040205-h3qe07le2ld2r6b36khqbuq490gp2uft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4P1h_u4WzJLjr-fUTkBuqpK1vAv3TIBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622063040205-h3qe07le2ld2r6b36khqbuq490gp2uft.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "622063040205-0lbvcv9d2rae3kjksq4rntlu5jamv4kb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.TheRoughCode.AstroJump"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
